@@ -17,7 +17,7 @@ class CreateQuestionsTable extends Migration
             $table->id();
             $table->foreignId('exam_id')->constrained();
             $table->text('question');
-            $table->text('option1');
+            $table->text('option1')->nullable();
             $table->text('option2')->nullable();
             $table->text('option3')->nullable();
             $table->text('option4')->nullable();
